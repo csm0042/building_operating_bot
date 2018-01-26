@@ -9,9 +9,9 @@ import os
 import sys
 if __name__ == "__main__":
     sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from http_wemo_server.configure import ConfigureService
-from http_wemo_server.wemo import WemoAPI
-from http_wemo_server.request_handler import MyHttpRequestHandler
+from bob.configure import ConfigureService
+from bob.wemo import WemoAPI
+from bob.request_handler import MyHttpRequestHandler
 
 
 # Authorship Info *************************************************************
