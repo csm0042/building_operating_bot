@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang-"en-US">
+    <head>
+        <title>Building Operating Bot (B.O.B.)</title>     
+        <meta charset="UTF-8">   
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/bob.css" />
+        <link rel="stylesheet" href="fonts/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+        <script src="js/clock.js"></script>
+        <script src="js/devices.js"></script>
+        <script src="js/home.js"></script>
+
+    </head>
+
+    <body onload="screenRefresh('none')">
+        <div class="usable-window">
+            <!-- HEADER / MENU -->
+            <div class="icon-bar">
+                <a href="index.html"><i class="fa fa-cogs"></i></a> 
+                <a href="home.html" class="active"><i class="fa fa-home"></i></a> 
+                <a href="environment.html"><i class="fa fa-thermometer"></i></a>
+                <a href="map.html"><i class="fa fa-map"></i></a>
+                <a href="calendar.html"><i class="fa fa-calendar"></i></a>
+            </div>
+
+            <!-- WINDOW CONTENT -->
+            <div class="window-content">
+                <h2><br>TOP FLOOR<br></h2>
+                <button id="br1lt1-button" class="bg-offblack fg-orange" onclick="br1lt1.toggleState()">
+                    BR1LT1<br><i id="br1lt1" class="fa fa-toggle-off fa-3x fg-white"></i>
+                </button>
+                <button id="br1lt2-button" class="bg-offblack fg-orange" onclick="br1lt2.toggleState()">
+                    BR1LT2<br><i id="br1lt2" class="fa fa-toggle-off fa-3x fg-white"></i>
+                </button>
+                <button id="br2lt1-button" class="bg-offblack fg-orange" onclick="br2lt1.toggleState()">
+                    BR2LT1<br><i id="br2lt1" class="fa fa-toggle-off fa-3x fg-white"></i>
+                </button>
+                <button id="br2lt2-button" class="bg-offblack fg-orange" onclick="br2lt2.toggleState()">
+                    BR2LT2<br><i id="br2lt2" class="fa fa-toggle-off fa-3x fg-white"></i>
+                </button>
+                <button id="br3lt1-button" class="bg-offblack fg-orange" onclick="br3lt1.toggleState()">
+                    BR3LT1<br><i id="br3lt1" class="fa fa-toggle-off fa-3x fg-white"></i>
+                </button>
+                <button id="br3lt2-button" class="bg-offblack fg-orange" onclick="br3lt2.toggleState()">
+                    BR3LT2<br><i id="br3lt2" class="fa fa-toggle-off fa-3x fg-white"></i>
+                </button>
+                
+                <h2><br>GROUND FLOOR</h2>
+                <button id="ewlt1-button" class="bg-offblack fg-orange" onclick="ewlt1.toggleState()">
+                    EWLT1<br><i id="ewlt1" class="fa fa-toggle-off fa-3x fg-white"></i>
+                </button>
+                <button id="cclt1-button" class="bg-offblack fg-orange" onclick="cclt1.toggleState()">
+                    CCLT1<br><i id="cclt1" class="fa fa-toggle-off fa-3x fg-white"></i>
+                </button>
+                <button id="lrlt1-button" class="bg-offblack fg-orange" onclick="lrlt1.toggleState()">
+                    LRLT1<br><i id="lrlt1" class="fa fa-toggle-off fa-3x fg-white"></i>
+                </button>
+                <button id="lrlt2-button" class="bg-offblack fg-orange" onclick="lrlt2.toggleState()">
+                    LRLT2<br><i id="lrlt2" class="fa fa-toggle-off fa-3x fg-white"></i>
+                </button>
+                <button id="drlt1-button" class="bg-offblack fg-orange" onclick="drlt1.toggleState()">
+                    DRLT1<br><i id="drlt1" class="fa fa-toggle-off fa-3x fg-white"></i>
+                </button>
+                
+                <h2><br>BASEMENT</h2>
+                <button id="wslt1-button" class="bg-offblack fg-orange" onclick="wslt1.toggleState()">
+                    WSLT1<br><i id="wslt1" class="fa fa-toggle-off fa-3x fg-white"></i>
+                </button>
+                
+                <h2><br>OUTSIDE</h2>
+                <button id="fylt1-button" class="bg-offblack fg-orange" onclick="fylt1.toggleState()">
+                    FYLT1<br><i id="fylt1" class="fa fa-toggle-off fa-3x fg-white"></i>
+                </button>
+                <button id="fylt2-button" class="bg-offblack fg-orange" onclick="fylt2.toggleState()">
+                    FYLT2<br><i id="fylt2" class="fa fa-toggle-off fa-3x fg-white"></i>
+                </button>
+                <button id="bylt1-button" class="bg-offblack fg-orange" onclick="bylt1.toggleState()">
+                    BYLT1<br><i id="bylt1" class="fa fa-toggle-off fa-3x fg-white"></i>
+                </button>
+            </div>
+
+
+
+
+            
+            
+            
+            
+            
+            <!-- FOOTER -->
+            <div class="time-bar">
+                <p id="system-clock">time</p>
+            </div>
+        </div>
+    </body>
+</html>

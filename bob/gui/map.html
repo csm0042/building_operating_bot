@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang-"en-US">
+    <head>
+        <title>Building Operating Bot (B.O.B.)</title>     
+        <meta charset="UTF-8">   
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/bob.css" />
+        <link rel="stylesheet" href="fonts/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+        <script src="js/clock.js"></script>
+        <script src="js/map.js"></script>
+
+
+    </head>
+
+    <body onload="screenRefresh('none')">
+        <div class="usable-window">
+            <!-- HEADER / MENU -->        
+            <div class="icon-bar">
+                <a href="index.html"><i class="fa fa-cogs"></i></a> 
+                <a href="home.html"><i class="fa fa-home"></i></a> 
+                <a href="environment.html"><i class="fa fa-thermometer"></i></a>
+                <a href="map.html" class="active"><i class="fa fa-map"></i></a>
+                <a href="calendar.html"><i class="fa fa-calendar"></i></a>
+            </div>
+
+            <!-- WINDOW CONTENT -->
+            <div class="window-content">
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6229.738504498157!2d-90.36875869999997!3d38.6748728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1512657763470" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+
+            
+            
+            
+            
+            <!-- FOOTER -->
+            <div class="time-bar">
+                <p id="system-clock">time</p>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,348 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-family: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    line-height: 1;
+    color: #fff;
+    background: #000;
+    font-size: 14px;
+    font-family: sans-serif;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+h1 {
+    font-size: 34px;
+    padding-bottom: 10px;
+}
+
+strong {
+    font-weight: bold;
+    color: yellow;
+}
+
+/*  ROWS
+===============================================================*/
+.row {
+    padding: 0;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*  COLUMNS
+===============================================================*/
+[class*="col-"] {
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+.col-01 {width: calc((100vw - 34px) * (1 / 12))}
+.col-02 {width: calc((100vw - 34px) * (2 / 12))}
+.col-03 {width: calc((100vw - 34px) * (3 / 12))}
+.col-04 {width: calc((100vw - 34px) * (4 / 12))}
+.col-05 {width: calc((100vw - 34px) * (5 / 12))}
+.col-06 {width: calc((100vw - 34px) * (6 / 12))}
+.col-07 {width: calc((100vw - 34px) * (7 / 12))}
+.col-08 {width: calc((100vw - 34px) * (8 / 12))}
+.col-09 {width: calc((100vw - 34px) * (9 / 12))}
+.col-10 {width: calc((100vw - 34px) * (10 / 12))}
+.col-11 {width: calc((100vw - 34px) * (11 / 12))}
+.col-12 {width: calc((100vw - 34px) * (12 / 12))}
+
+
+
+
+
+
+/*  DEFINE BACKGROUND COLORS USED IN APPLICATION
+===============================================================*/
+.bg-orange {background-color: #f90;}
+.bg-grayBlue {background-color: #99c;}
+.bg-salmon {background-color: #c66;}
+.bg-tan {background-color: #fc8;}
+.bg-blue {background-color: #99f;}
+.bg-peach {background-color: #f96;}
+.bg-purple {background-color: #c69;}
+.bg-pink {background-color: #c9c;}
+.bg-white {background-color: #fff;}
+.bg-red {background: #f55;}
+.bg-black {background: #000;}
+.bg-offblack {background: #363434;}
+.bg-yellow {background: #ffe600;}
+
+/*  DEFINE FOREGROUND COLORS USED IN APPLICATION
+===============================================================*/
+.fg-orange {color: #f90;}
+.fg-grayBlue {color: #99c;}
+.fg-salmon {color: #c66;}
+.fg-tan {color: #fc8;}
+.fg-blue {color: #99f;}
+.fg-peach {color: #f96;}
+.fg-purple {color: #c69;}
+.fg-pink {color: #c9c;}
+.fg-white {color: #fff;}
+.fg-red {color: #f55;}
+.fg-green {color: rgb(19, 245, 19);}
+
+
+/*  ICON BAR
+===============================================================*/
+
+.icon-bar {
+    width: 100%; /* Full-width */
+    background-color: #555; /* Dark-grey background */
+    overflow: auto; /* Overflow due to float */
+}
+
+.icon-bar a {
+    float: left; /* Float links side by side */
+    text-align: center; /* Center-align text */
+    width: 20%; /* Equal width (5 icons with 20% width each = 100%) */
+    padding: 12px 0; /* Some top and bottom padding */
+    transition: all 0.3s ease; /* Add transition for hover effects */
+    color: white; /* White text color */
+    font-size: 30px; /* Increased font size */
+    height: 60px;
+}
+
+.icon-bar a:hover {
+    background-color: #000; /* Add a hover color */
+}
+
+.active {
+    background-color: #4CAF50; /* Add an active/current color */
+}
+
+/*  MAIN WINDOW
+===============================================================*/
+
+.usable-window {
+    width: calc(100vw - 30px);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.window-content {
+    height: calc(100vh - 90px);
+    width: 100%;
+}
+
+.calendar {
+    height: 100%;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.map {
+    height: 100%;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.forecast-box {
+    float: left;
+    height: 420px;
+    width: 620px;
+    background: #555555;
+    margin-top: 10px;
+    margin-left: 0px;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.current-conditions {
+    float: left;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 22px;
+    line-height: 120%;
+}
+
+.forecast-condition-keys {
+    float: left;
+    text-align: right;
+    color: yellow;
+    width: 25%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 0px;
+    padding-right: 10px;
+    font-size: 22px;
+    line-height: 120%;
+}
+
+.forecast-condition-values {
+    float: left;
+    width: 10%;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 0px;
+    padding-right: 10px;
+    font-size: 22px;
+    line-height: 120%;
+}
+
+.forecast-condition-units {
+    float: left;
+    width: 15%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 0px;
+    padding-right: 10px;
+    font-size: 22px;
+    line-height: 120%;
+}
+
+.forecast-day {
+    float: left;
+    width: 15%;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.forecast-date {
+    float: left;
+    width: 10%;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.forecast-summary {
+    float: left;
+    width: 75%;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+
+
+.image-box {
+    float: left;
+    height: auto;
+    width: auto;
+    background: #000000;
+    margin-top: 10px;
+    margin-left: 0px;
+    margin-right: 10px;
+
+}
+
+.radar {
+    width: auto;
+    height: auto;
+}
+
+.hover-summary {
+    position: absolute;
+    top: 110px;
+    right: 50px;
+    background: #555555;
+    line-height: 150%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.hover-current {
+    position: absolute;
+    top: 180px;
+    right: 50px;
+    background: #555555;
+    line-height: 150%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+@media only screen and (min-width: 2001px) {
+    .image-box {
+        float: left;
+        height: auto;
+        width: auto;
+        background: #555555;
+        margin-top: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+        padding: 10px;
+    }
+
+    .radar {
+        width: auto;
+        height: auto;
+    }
+}
+
+.time-bar {
+    position: fixed;
+    bottom: 10px;
+    height: 26px;
+    width: calc(100vw - 30px);
+    background: #555555;
+    padding-top: 5px;
+    padding-right: 5px;
+    text-align: right;
+}
+
+.cell-space {
+    width: calc(0.25 * 100vw);
+    height: calc(0.66 * 0.25 * 100vw);
+    background-color: #ffffff;
+    overflow: auto;
+}
+
+.cell-background {
+    width: 96%;
+    height: 96%;
+    margin-top: 2%;
+    margin-left: 2%;
+    background-color: rgb(81, 81, 83);
+    overflow: auto;
+}
+
+.cell-canvas {
+    width: 96%;
+    height: 96%;
+    margin-top: 2%;
+    margin-left: 2%;
+    background-color: #99f;
+}

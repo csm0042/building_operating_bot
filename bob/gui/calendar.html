@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang-"en-US">
+    <head>
+        <title>Building Operating Bot (B.O.B.)</title>     
+        <meta charset="UTF-8">   
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/bob.css" />
+        <link rel="stylesheet" href="fonts/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+        <script src="js/clock.js"></script>
+        <script src="js/calendar.js"></script>
+
+    </head>
+
+    <body onload="screenRefresh('cal')" onresize="updateCal('cal')">
+        <div class="usable-window">
+            <!-- HEADER / MENU -->
+            <div class="icon-bar">
+                <a href="index.html"><i class="fa fa-cogs"></i></a> 
+                <a href="home.html"><i class="fa fa-home"></i></a> 
+                <a href="environment.html"><i class="fa fa-thermometer"></i></a>
+                <a href="map.html"><i class="fa fa-map"></i></a>
+                <a href="calendar.html" class="active"><i class="fa fa-calendar"></i></a>
+            </div>
+
+            <!-- WINDOW CONTENT -->
+            <div class="window-content">
+                <iframe id = "cal" class="calendar" src="https://calendar.google.com/calendar/embed?showTitle=0&amp;mode=WEEK&amp;height=600&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=csmaue%40gmail.com&amp;color=%231badf8&amp;src=aidenmaue%40gmail.com&amp;color=%23ffcc00&amp;src=2dttuudaemv60luom6fgfmnf4s%40group.calendar.google.com&amp;color=%23691426&amp;src=sarahemaue%40gmail.com&amp;color=%23cc73e1&amp;src=o1h5ka6ugqn30jehb3ei7pbo2k%40group.calendar.google.com&amp;color=%23711616&amp;ctz=America%2FChicago" style="border-width:0" frameborder="0" scrolling="no"></iframe>
+            </div>
+
+            
+            
+            
+            
+            
+            <!-- FOOTER -->
+            <div class="time-bar">
+                <p id="system-clock">time</p>
+            </div>            
+        </div>
+    </body>
+</html>
