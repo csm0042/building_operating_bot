@@ -38,7 +38,7 @@ class HttpServer(object):
 
         self.logger.info('Starting server')
         self.server = HTTPServer(('', 8000), handler)
-        self.logger.info('Server is running')
+        self.logger.info('Server is running at localhost, port 8000')
         self.server.serve_forever()
 
 
