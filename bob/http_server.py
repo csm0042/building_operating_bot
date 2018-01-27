@@ -37,8 +37,10 @@ class HttpServer(object):
             MyHttpRequestHandler(self.logger, self.gateway, *args)
 
         self.logger.info('Starting server')
-        self.server = HTTPServer(('', 8000), handler)
-        self.logger.info('Server is running at localhost, port 8000')
+        self.address = '127.0.0.1'
+        self.port = 8000
+        self.server = HTTPServer((self.address, self.port), handler)
+        self.logger.info('Server is running at %s:%s', self.address, str(self.port))
         self.server.serve_forever()
 
 
