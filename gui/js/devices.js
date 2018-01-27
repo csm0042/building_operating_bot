@@ -84,7 +84,7 @@ function sendCmd(id, addr, cmd, cFunction) {
         }
     };
     // Set URL and header info, then send request
-    var url = "127.0.0.1:8000/?t=" + Math.random() + "&name=" + id + "&addr=" + addr + "&cmd=" + cmd;
+    var url = "localhost:8000/?t=" + Math.random() + "&name=" + id + "&addr=" + addr + "&cmd=" + cmd;
     xhttp.open("GET", url, true);
     xhttp.send(null);
 }
